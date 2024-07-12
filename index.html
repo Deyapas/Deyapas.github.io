@@ -1,73 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESTA ES MI PRIMERA PAGINA WEB</title>
-    <style type="text/css">
-    
-        body{
-            background-color: rgb(180, 92, 180);
-            background-image: url(imagenes/p1.jpg);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-
-        }
-        h1{
-            font-size:xx-large;
-            color: blueviolet;
-            text-align: center;
-        }
-        p{
-            font-size: large;
-            text-align: justify;
-            font-family: 'Times New Roman', Times, serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Formilario1</title>
+  <link rel="stylesheet" href="estilofor.css">
+  <style>
+    body{
+    background-image: url(uuuuuuuuuu.jpg);
+}
+  </style>
+  
 </head>
 <body>
-    <h1>Qué es CSS3 y sus fundamentos</h1>
-    <h2>Qué significa CCS3   </h2>
-    <p>CSS3 es una tecnología que ha tenido una evolución en el tiempo, que actualmente se encuentra en su versión 3, como su propio nombre indica.</p>
-    <p>Sus siglas corresponden a “Cascading Style Sheets”, que tiene el siguiente significado:</p>
-    <ul>
-    <li>Cascading, que significa que los estilos que aplicamos a los elementos de una página web se propagan a los elementos que contiene, se propagan en cascada.</li>
-    <li>Style, porque mediante CSS lo que hacemos es aplicar estilos visuales a los distintos elementos de nuestra página web.</li>
-    <li>Sheets, que significa hojas, porque los estilos de una página web se añaden en ficheros aparte, en ficheros con la extensión .css de manera general.</li>
-    </ul>
-<p>CSS ha ido evolucionando desde hace 25 años a la versión actual, que es CSS3, pero su función es la misma, sirve para dar estilos visuales a las páginas web.</p>
-<h2>Definición de CSS3</h2>
-<p>Una definición más formal de CSS sería la siguiente que aparece en Wikipedia:</p>
-<p>CSS es un lenguaje de diseño gráfico que permite definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual de los documentos web e interfaces de usuario escritas en HTML.</p>
-<p>En la propia definición de CSS vemos que está muy ligado desde su nacimiento a HTML. Desde que nació, el objetivo de CSS fue poner un poco de orden a la hora de aplicar los estilos a las páginas web.</p>
-<h2>Funcionamiento</h2>
-<p>Vamos a ver en un pequeño esquema qué es lo que sucede desde que se solicita una página web hasta que se le aplica el estilo. El proceso es el siguiente:</p>
-<img src="esquema.png" alt="" width="300" height="200">
-<p>Cuando desde un navegador, por ejemplo Chrome, solicitamos una página a través de una dirección, por ejemplo http://..../index.html, esta petición va a un servidor web, que nos devuelve la página que se ha solicitado.</p>
-<a href="https://youtu.be/w-PQtgOc0Xw?si=pvo6iBcdQIHo6Kjg" >Video</a>
-<br><br>
-<iframe width="560" height="315" src="https://youtu.be/w-PQtgOc0Xw?si=pvo6iBcdQIHo6Kjg" frameborder="0"></iframe> 
-<br><br>
-<td>TABLA</td>
-<table border="1">
-<br><br>
-<caption> elemetos de una tabla</caption>
-<tr><th>d1</th><th>d2</th><th>d3</th></tr>
-<tr><td>1</td><td>opcion1</td><td>opcion4</td></tr>
-<tr><td>2</td><td>opcion2</td><td>opcion5</td></tr>
-<tr><td>3</td><td>opcion3</td><td>opcion6</td></tr>
-</table>
-<br>
-<form action="">
-    <input type="text" placeholder="Nombre completo">
-    <input type="text" placeholder="Apellido Paterno"> 
-    <input type="text" placeholder="Apellido Materno">
-    <input type="text" placeholder="Correo electronico">
-    <input type="text" placeholder="Teléfono">
-    <textarea name="" id="" placeholder="Mensaje"></textarea>
-    <input type="submit" value="Enviar">
+    <h2>Formulario</h2>
+    
+    <form action="/enviar_datos" method="post">
+      <label>Nombre:</label><br>
+      <input type="text" name="nombre"><br>
+      
+      <label>Apellido Paterno:</label><br>
+      <input type="text" name="apellido"><br>
+      
+      <label>Apellido Materno:</label><br>
+      <input type="text" name="apellidom"><br>
 
-</form>
-<br><br>
+      <label>Edad:</label><br>
+      <input type="text" name="edad"><br>
+      
+      <label>Teléfono:</label><br>
+      <input type="text" name="telefono"><br>
+      
+      <p>Sexo:
+        <input type="radio" name="hm" value="h"> Hombre
+        <input type="radio" name="hm" value="m"> Mujer
+      </p>
+      
+      <label>Email:</label><br>
+      <input type="text" name="email"><br>
+      
+      <label>Mensaje:</label><br>
+      <textarea name="mensaje"></textarea><br><br>
+      
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+    </form>
 </body>
 </html>
